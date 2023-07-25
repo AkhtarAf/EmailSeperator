@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}"/>
+    <title>Input</title>
+</head>
+<body>
+<h1>Spring Assignment</h1>
+<hr>
+<span th:text = "${error}"></span>
+<form action="/result" method="get">
+    <input type="text" name="emailInput" placeholder="xyz@gmail.com"/>
+    <input type="submit" value="Send"/>
+</form>
+</body>
+</html>
